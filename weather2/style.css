@@ -1,0 +1,257 @@
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  width: 100vw;
+  box-sizing: border-box;
+}
+
+.ellipse {
+  position: absolute;
+  border: 3px solid #ffffff;
+  border-radius: 50%;
+  opacity: 0.2;
+  z-index: auto;
+}
+
+.day {
+  height: 100vh;
+  width: 50%;
+  background-color: #f3f4f6;
+}
+
+.night {
+  height: 100vh;
+  width: 50%;
+  background-color: #0f141e;
+}
+
+.logo {
+  position: absolute;
+  top: 50%;
+  left: 50.5%;
+  transform: translate(-50%, -50%);
+  height: 150px;
+  width: 150px;
+  background-color: #f3f4f6;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.logo::before {
+  content: "";
+  position: absolute;
+  left: 72.5px;
+  top: -22.5px;
+  height: 25px;
+  width: 25px;
+  border-bottom-left-radius: 25px;
+  box-shadow: -10px 2px #f3f4f6;
+  background-color: #0f141e;
+}
+
+.logo::after {
+  content: "";
+  position: absolute;
+  left: 72.5px;
+  top: 147.5px;
+  width: 25px;
+  height: 25px;
+  border-top-left-radius: 25px;
+  box-shadow: -10px -5px #f3f4f6;
+  background-color: #0f141e;
+}
+
+.inner-logo {
+  position: absolute;
+  display: flex;
+  gap: 15px;
+}
+
+button {
+  background-color: #ffffff;
+  border: none;
+}
+
+.search-img {
+  height: 35px;
+  width: 35px;
+}
+
+.search-container{
+  position: absolute;
+  top: 40px;
+  left: 40px;
+}
+
+.search {
+  height: 50px;
+  width: 300px;
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  border-radius: 50px;
+  gap: 10px;
+  background-color: #ffffff;
+}
+
+#input {
+  outline: none;
+  border: none;
+  font-size: 20px;
+}
+
+.inner-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.results{
+  position: absolute;
+  width: 180px;
+  margin-top: 10px;
+}
+
+#locations{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 5px 5px;
+  background-color: #ddd9d9cc;
+  border-radius: 20px;
+}
+
+.orange {
+  position: relative;
+  bottom: 350px;
+  right: 200px;
+}
+
+.purple {
+  position: relative;
+  top: 320px;
+  left: 190px;
+}
+
+.white {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 30px 10px;
+  height: 650px;
+  width: 380px;
+  border-radius: 40px;
+  background-color: rgba(255, 255, 255, 0.5);
+  position: absolute;
+}
+
+.day-div1 {
+  font-family: "Manrope", sans-serif;
+  display: flex;
+  gap: 70px;
+}
+
+.date {
+  margin: 0;
+  font-size: 15px;
+}
+
+.city { 
+  margin: 0;
+  font-size: 40px;
+}
+
+.sun {
+  padding-left: 30px;
+  height: 300px;
+  width: 300px;
+}
+
+.temp {
+  font-family: "Manrope", sans-serif;
+  height: 180px;
+  width: 212px;
+}
+
+.degree {
+  margin: 0;
+  font-size: 100px;
+}
+
+.night-degree-color {
+  height: 130px;
+  width: 200px;
+  background: linear-gradient(rgb(217, 209, 209), rgb(78, 76, 76));
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+}
+
+.degree-color {
+  height: 130px;
+  width: 200px;
+  background: linear-gradient(black, grey);
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+}
+
+.condition {
+  margin: 0;
+  font-size: 20px;
+  color: Orange;
+}
+
+.icons {
+  margin-top: 15px;
+  height: 32px;
+  width: 250px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.black {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(19, 21, 45, 0.9);
+  height: 650px;
+  width: 380px;
+  border-radius: 40px;
+  position: absolute;
+  z-index: 2;
+  backdrop-filter: blur(4px);
+}
+
+.night-div1 {
+  font-family: "Manrope", sans-serif;
+  display: flex;
+  gap: 70px;
+  color: white;
+}
+
+.moon {
+  height: 250px;
+  width: 250px;
+}
+
+.night-degree {
+  margin: 0;
+  font-size: 100px;
+}
+
+.night-condition {
+  margin: 0;
+  font-size: 20px;
+  color: #777cce;
+}
+
+.home {
+  stroke: white;
+}
